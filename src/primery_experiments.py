@@ -7,9 +7,20 @@ from agents import WolfAgent, QLearningAgent
 
 def run_experiment_with_dataset(agent_type, queue_depth, episodes, mode, seed=42):
     """
-    Executes a single reinforcement learning experiment, logs step-by-step
+    Executes a single reinforcement learning experiment, logs trajectory 
     data for dataset generation, and tracks metrics for convergence analysis.
+
+    Parameters:
+        agent_type (str): Type of agent ('wolf' or 'q_learning').
+        queue_depth (int): Queue length capacity per approach lane.
+        episodes (int): Total training episodes to run.
+        mode (str): Environment scenario ('pure' or 'ambulance_random').
+        seed (int): Random seed for reproducibility.
+
+    Returns:
+        tuple: (crash_hist, success_hist, reward_hist, dataset_records)
     """
+    
     np.random.seed(seed)
     
     # Initialize the intersection environment and active RL agents
