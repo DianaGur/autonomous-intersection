@@ -25,19 +25,24 @@ Urban intersection management represents a classic multi-agent coordination chal
         cd autonomous-intersection
 2. **Set up virtual environment & install dependencies**:
     Create a Python 3.10 virtual environment, activate it, and install all required packages listed in requirements.txt:
-    Windows (PowerShell): 
+    Windows (PowerShell):
+    ```text
         python -m venv .venv
         .\.venv\Scripts\Activate.ps1
         pip install -r requirements.txt
+    ```
     Linux / macOS:
+    ```text
         python3 -m venv .venv
         source .venv/bin/activate
-        pip install -r requirements.txt    
+        pip install -r requirements.txt
+    ```
 3.  **Run preliminary 2-agent experiments**
         Navigate into the src/ directory and run the preliminary experiments to evaluate basic convergence and generate the initial dataset CSV + individual reward plots:
+        ```text
         cd src
         python primery_experiments.py
-
+        ```
         This step will generate output figures inside figures/ and export dataset/simulation_dataset.csv.
 4.  **Run multi-agent scalability benchmark**:
     Execute the main scalability experiment suite to benchmark performance across 4 to 16 agents:
