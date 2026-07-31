@@ -35,6 +35,10 @@ autonomous-intersection/
 ├── README.md
 └── requirements.txt                # Python dependencies
 
+```
+
+---
+
 ## Runing instructions
 
     1. **Clone the repository:**
