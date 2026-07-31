@@ -22,6 +22,7 @@ Urban intersection management represents a classic multi-agent coordination chal
         Clone the project repository to your local computer and navigate into the root directory:
         ```bash
         git clone [https://github.com/YOUR_USERNAME/autonomous-intersection.git](https://github.com/YOUR_USERNAME/autonomous-intersection.git)
+        ```
         cd autonomous-intersection
 2. **Set up virtual environment & install dependencies**:
     Create a Python 3.10 virtual environment, activate it, and install all required packages listed in requirements.txt:
