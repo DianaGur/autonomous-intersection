@@ -16,29 +16,6 @@ Urban intersection management represents a classic multi-agent coordination chal
 
 ---
 
-## Repository Structure
-
-```text
-autonomous-intersection/
-├── dataset/                        # Logged trajectory & action datasets (.csv)
-│   └── simulation_dataset.csv
-├── figures/                        # Output plots and comparative performance figures
-│   ├── scenario_1_reward_analysis.png
-│   ├── scenario_2_reward_analysis.png
-│   └── multi_scenario_comparison.png
-├── src/                            # Core Python source code
-│   ├── agents.py                   # WoLF-PHC & Q-Learning Agent implementations
-│   ├── environment.py              # MultiVehicleIntersectionEnv environment definition
-│   ├── primery_experiments.py      # Script for preliminary 2-agent experiments & dataset logging
-│   └── main.py                     # Main scalability experiment suite
-├── .gitignore
-├── README.md
-└── requirements.txt                # Python dependencies
-
-```
-
----
-
 ## Runing instructions
 
     1. **Clone the repository:**
@@ -67,3 +44,28 @@ autonomous-intersection/
         python main.py
 
         This step will update the multi-agent scalability benchmark plots inside the figures/ directory.
+
+---
+
+## Repository Structure
+
+```text
+autonomous-intersection/
+├── dataset/                        # Logged trajectory & action datasets (.csv)
+│   └── simulation_dataset.csv
+├── figures/                        # Output plots and comparative performance figures
+│   ├── scenario_1_reward_analysis.png
+│   ├── scenario_2_reward_analysis.png
+│   └── multi_scenario_comparison.png
+├── src/                            # Core Python source code
+│   ├── agents.py                   # WoLF-PHC & Q-Learning Agent implementations
+│   ├── environment.py              # MultiVehicleIntersectionEnv environment definition
+│   ├── primery_experiments.py      # Script for preliminary 2-agent experiments & dataset logging
+│   └── main.py                     # Main scalability experiment suite
+├── .gitignore
+├── README.md
+└── requirements.txt                # Python dependencies
+
+```
+
+---
